@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="continue_to_quiz">Continue</string>
+    <string name="choose_a_topic">Choose a topic of your interest</string>
+    <string name="programming">Programming</string>
+    <string name="ux_design">UX Design</string>
+    <string name="algorithms">Algorithms</string>
+    <string name="productivity">Productivity</string>
+
+    <string name="programming_first_question">Who developed C language?</string>
+    <string name="programming_first_question_first_option">Bjarne Stroustrup</string>
+    <string name="programming_first_question_second_option">Dennis Ritchie</string>
+    <string name="programming_first_question_third_option">James Gosling</string>
+
+    <string name="programming_second_question">Android apps can be written using</string>
+    <string name="programming_second_question_first_option">C#</string>
+    <string name="programming_second_question_second_option">Java</string>
+    <string name="programming_second_question_third_option">Kotlin</string>
+
+    <string name="programming_banner_illustration">A banner illustrating programming paradigm</string>
+    <string name="algorithms_banner_illustration">A banner illustrating programming paradigm</string>
+    <string name="uxd_banner_illustration">A banner illustrating programming paradigm</string>
+
+    <string name="programming_third_question">C++ and Java both are … typed.</string>
+    <string name="third_question_hint">Type your answer here</string>
+
+    <string name="programming_fourth_question">In C language all functions except main() can be called recursively.</string>
+    <string name="programming_fourth_question_first_option">True</string>
+    <string name="programming_fourth_question_second_option">False</string>
+
+    <string name="programming_fifth_question">In Java String is a primitive data type</string>
+    <string name="programming_fifth_question_first_option">True</string>
+    <string name="programming_fifth_question_second_option">False</string>
+
+    <string name="programming_submit_button">Submit</string>
+
+    <string name="greeting">Congratulations!</string>
+    <string name="you_scored_label">You Scored</string>
+    <string name="score">5</string>
+    <string name="take_another_quiz">Take Another Quiz</string>
+    <string name="better_luck_next_time">Better luck next time!</string>
+    <string name="congratulations">Congratulations!</string>
+
+    <string name="uxd_first_question">What does UX stand for?</string>
+    <string name="uxd_first_question_first_option">User Exchange</string>
+    <string name="uxd_first_question_second_option">User Experience</string>
+    <string name="uxd_first_question_third_option">User Interface</string>
+
+    <string name="uxd_second_question">Design Means …</string>
+    <string name="uxd_second_question_first_option">What something looks like</string>
+    <string name="uxd_second_question_second_option">Color and patterns, shapes and lines</string>
+    <string name="uxd_second_question_third_option">How something is used / its function</string>
+
+    <string name="uxd_third_question">MVP stands for …</string>
+    <string name="uxd_third_question_answer">minimum viable product</string>
+
+    <string name="uxd_fourth_question">Usability testing should be done after project design phase only.</string>
+    <string name="uxd_fourth_question_first_option">True</string>
+    <string name="uxd_fourth_question_second_option">False</string>
+
+    <string name="uxd_fifth_question">User Experience Design is also known as User Interface Design</string>
+    <string name="uxd_fifth_question_first_option">True</string>
+    <string name="uxd_fifth_question_second_option">False</string>
+
+    <string name="uxd_submit_button">Submit</string>
+
+    <string name="algorithms_first_question">Which of the following sorting algorithms has the lowest worst-case complexity?</string>
+    <string name="algorithms_first_question_first_option">Quick Sort</string>
+    <string name="algorithms_first_question_second_option">Merge Sort</string>
+    <string name="algorithms_first_question_third_option">Selection Sort</string>
+
+    <string name="algorithms_second_question">What are the major data structures used in RDBMS, Network data model and Hierarchical data model.</string>
+    <string name="algorithms_second_question_first_option">Array</string>
+    <string name="algorithms_second_question_second_option">Graph</string>
+    <string name="algorithms_second_question_third_option">Trees</string>
+
+    <string name="algorithms_third_question">The minimum number of comparisons required to find the minimum and the maximum of 100 number is …</string>
+
+    <string name="algorithms_fourth_question">A LinkedList is a dynamic structure</string>
+    <string name="algorithms_fourth_question_first_option">True</string>
+    <string name="algorithms_fourth_question_second_option">False</string>
+
+    <string name="algorithms_fifth_question">In mathematics and computer science an algorithm is an unambiguous specification of how to solve a class of problems.</string>
+    <string name="algorithms_fifth_question_first_option">True</string>
+    <string name="algorithms_fifth_question_second_option">False</string>
+
+    <string name="algorithms_submit_button">Submit</string>
+    <string name="algorithms_third_question_answer">148</string>
+
+    <string name="productivity_banner_illustration">A banner illustrating productivity</string>
+
+    <string name="productivity_first_question">Which one of the following makes us productive on go?</string>
+    <string name="productivity_first_question_first_option">Desktop Computer</string>
+    <string name="productivity_first_question_second_option">Mobile</string>
+    <string name="productivity_first_question_third_option">Television</string>
+
+    <string name="productivity_second_question">Multiple ways that boost your Productivity at the Office are</string>
+    <string name="productivity_second_question_first_option">C#</string>
+    <string name="productivity_second_question_second_option">Java</string>
+    <string name="productivity_second_question_third_option">Kotlin</string>
+
+    <string name="productivity_third_question">When you\'re planning out your workweek, you always create your</string>
+
+    <string name="productivity_fourth_question">Microsoft Office 365 and Google Docs are the best productivity softwares.</string>
+    <string name="productivity_fourth_question_first_option">True</string>
+    <string name="productivity_fourth_question_second_option">False</string>
+
+    <string name="productivity_fifth_question">Least time-wasting way to communicate about work stuff is via Slack.</string>
+    <string name="productivity_fifth_question_first_option">True</string>
+    <string name="productivity_fifth_question_second_option">False</string>
+    <string name="productivity_third_question_answer">to do list</string>
+
+
+</resources>

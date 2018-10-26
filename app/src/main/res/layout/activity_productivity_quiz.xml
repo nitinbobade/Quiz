@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/bannerImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/productivity_banner_illustration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/productivity_banner" />
+
+        <TextView
+            android:id="@+id/productivityFirstQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/productivity_first_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bannerImageView" />
+
+        <RadioGroup
+            android:id="@+id/productivityFirstQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productivityFirstQuestionTextView">
+
+            <RadioButton
+                android:id="@+id/productivityFirstQuestionFirstOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/productivity_first_question_first_option" />
+
+            <RadioButton
+                android:id="@+id/productivityFirstQuestionSecondOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/productivity_first_question_second_option" />
+
+            <RadioButton
+                android:id="@+id/productivityFirstQuestionThirdOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/productivity_first_question_third_option" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/firstHorizontalDivider"
+            style="@style/HorizontalDividerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productivityFirstQuestionRadioGroup" />
+
+        <TextView
+            android:id="@+id/productivitySecondQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/productivity_second_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstHorizontalDivider" />
+
+        <CheckBox
+            android:id="@+id/productivitySecondQuestionFirstOptionCheckBox"
+            style="@style/CheckBoxStyle"
+            android:text="@string/productivity_second_question_first_option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productivitySecondQuestionTextView" />
+
+        <CheckBox
+            android:id="@+id/productivitySecondQuestionSecondOptionCheckBox"
+            style="@style/CheckBoxStyle"
+            android:text="@string/productivity_second_question_second_option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productivitySecondQuestionFirstOptionCheckBox" />
+
+        <CheckBox
+            android:id="@+id/productivitySecondQuestionThirdOptionCheckBox"
+            style="@style/CheckBoxStyle"
+            android:text="@string/productivity_second_question_third_option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productivitySecondQuestionSecondOptionCheckBox" />
+
+        <View
+            android:id="@+id/secondHorizontalDivider"
+            style="@style/HorizontalDividerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productivitySecondQuestionThirdOptionCheckBox" />
+
+        <TextView
+            android:id="@+id/productivityThirdQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:focusableInTouchMode="true"
+            android:text="@string/productivity_third_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondHorizontalDivider" />
+
+        <EditText
+            android:id="@+id/productivityThirdQuestionEditText"
+            style="@style/EditTextStyle"
+            android:hint="@string/third_question_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productivityThirdQuestionTextView" />
+
+        <View
+            android:id="@+id/thirdHorizontalDivider"
+            style="@style/HorizontalDividerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productivityThirdQuestionEditText" />
+
+        <TextView
+            android:id="@+id/productivityFourthQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/productivity_fourth_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thirdHorizontalDivider" />
+
+        <RadioGroup
+            android:id="@+id/productivityFourthQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productivityFourthQuestionTextView">
+
+            <RadioButton
+                android:id="@+id/productivityFourthQuestionFirstOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/productivity_fourth_question_first_option" />
+
+            <RadioButton
+                android:id="@+id/productivityFourthQuestionSecondOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/productivity_fourth_question_second_option" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/fourthHorizontalDivider"
+            style="@style/HorizontalDividerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productivityFourthQuestionRadioGroup" />
+
+        <TextView
+            android:id="@+id/productivityFifthQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/productivity_fifth_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fourthHorizontalDivider" />
+
+        <RadioGroup
+            android:id="@+id/productivityFifthQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productivityFifthQuestionTextView">
+
+            <RadioButton
+                android:id="@+id/productivityFifthQuestionFirstOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/productivity_fifth_question_first_option" />
+
+            <RadioButton
+                android:id="@+id/productivityFifthQuestionSecondOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/productivity_fifth_question_second_option" />
+
+        </RadioGroup>
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/productivitySubmitButton"
+            style="@style/SubmitButtonStyle"
+            android:text="@string/programming_submit_button"
+            app:cornerRadius="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productivityFifthQuestionRadioGroup" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

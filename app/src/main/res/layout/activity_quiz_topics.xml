@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/selectTopicTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/choose_a_topic"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/programmingCategoryImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectTopicTextView"
+            app:srcCompat="@drawable/programming_illustration" />
+
+        <TextView
+            android:id="@+id/programmingCategoryTextView"
+            style="@style/QuizTopicTextViewStyle"
+            android:text="@string/programming"
+            app:layout_constraintEnd_toEndOf="@id/programmingCategoryImageView"
+            app:layout_constraintStart_toStartOf="@id/programmingCategoryImageView"
+            app:layout_constraintTop_toBottomOf="@+id/programmingCategoryImageView" />
+
+        <ImageView
+            android:id="@+id/uxDesignCategoryImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectTopicTextView"
+            app:srcCompat="@drawable/ux_design_illustration" />
+
+        <TextView
+            android:id="@+id/uxDesignCategoryTextView"
+            style="@style/QuizTopicTextViewStyle"
+            android:text="@string/ux_design"
+            app:layout_constraintEnd_toEndOf="@id/uxDesignCategoryImageView"
+            app:layout_constraintStart_toStartOf="@id/uxDesignCategoryImageView"
+            app:layout_constraintTop_toBottomOf="@+id/uxDesignCategoryImageView" />
+
+        <ImageView
+            android:id="@+id/algorithmsCategoryImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/programmingCategoryTextView"
+            app:srcCompat="@drawable/algorithms_illustration" />
+
+        <TextView
+            android:id="@+id/algorithmsCategoryTextView"
+            style="@style/QuizTopicTextViewStyle"
+            android:layout_marginBottom="24dp"
+            android:text="@string/algorithms"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/algorithmsCategoryImageView"
+            app:layout_constraintStart_toStartOf="@id/algorithmsCategoryImageView"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmsCategoryImageView" />
+
+        <ImageView
+            android:id="@+id/productivityCategoryImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uxDesignCategoryTextView"
+            app:srcCompat="@drawable/productivity_illustration" />
+
+        <TextView
+            android:id="@+id/productivityCategoryTextView"
+            style="@style/QuizTopicTextViewStyle"
+            android:layout_marginBottom="24dp"
+            android:text="@string/productivity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/productivityCategoryImageView"
+            app:layout_constraintStart_toStartOf="@id/productivityCategoryImageView"
+            app:layout_constraintTop_toBottomOf="@+id/productivityCategoryImageView" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

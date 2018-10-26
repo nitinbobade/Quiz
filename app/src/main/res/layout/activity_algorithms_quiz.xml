@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/bannerImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/algorithms_banner_illustration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/algorithms_banner" />
+
+        <TextView
+            android:id="@+id/algorithmsFirstQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/algorithms_first_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bannerImageView" />
+
+        <RadioGroup
+            android:id="@+id/algorithmsFirstQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmsFirstQuestionTextView">
+
+            <RadioButton
+                android:id="@+id/algorithmsFirstQuestionFirstOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/algorithms_first_question_first_option" />
+
+            <RadioButton
+                android:id="@+id/algorithmsFirstQuestionSecondOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/algorithms_first_question_second_option" />
+
+            <RadioButton
+                android:id="@+id/algorithmsFirstQuestionThirdOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/algorithms_first_question_third_option" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/firstHorizontalDivider"
+            style="@style/HorizontalDividerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmsFirstQuestionRadioGroup" />
+
+        <TextView
+            android:id="@+id/algorithmsSecondQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/algorithms_second_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstHorizontalDivider" />
+
+        <CheckBox
+            android:id="@+id/algorithmsSecondQuestionFirstOptionCheckBox"
+            style="@style/CheckBoxStyle"
+            android:text="@string/algorithms_second_question_first_option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmsSecondQuestionTextView" />
+
+        <CheckBox
+            android:id="@+id/algorithmsSecondQuestionSecondOptionCheckBox"
+            style="@style/CheckBoxStyle"
+            android:text="@string/algorithms_second_question_second_option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmsSecondQuestionFirstOptionCheckBox" />
+
+        <CheckBox
+            android:id="@+id/algorithmsSecondQuestionThirdOptionCheckBox"
+            style="@style/CheckBoxStyle"
+            android:text="@string/algorithms_second_question_third_option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmsSecondQuestionSecondOptionCheckBox" />
+
+        <View
+            android:id="@+id/secondHorizontalDivider"
+            style="@style/HorizontalDividerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmsSecondQuestionThirdOptionCheckBox" />
+
+        <TextView
+            android:id="@+id/algorithmsThirdQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:focusableInTouchMode="true"
+            android:text="@string/algorithms_third_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondHorizontalDivider" />
+
+        <EditText
+            android:id="@+id/algorithmsThirdQuestionEditText"
+            style="@style/EditTextStyle"
+            android:hint="@string/third_question_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmsThirdQuestionTextView" />
+
+        <View
+            android:id="@+id/thirdHorizontalDivider"
+            style="@style/HorizontalDividerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmsThirdQuestionEditText" />
+
+        <TextView
+            android:id="@+id/algorithmsFourthQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/algorithms_fourth_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thirdHorizontalDivider" />
+
+        <RadioGroup
+            android:id="@+id/algorithmsFourthQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmsFourthQuestionTextView">
+
+            <RadioButton
+                android:id="@+id/algorithmsFourthQuestionFirstOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/algorithms_fourth_question_first_option" />
+
+            <RadioButton
+                android:id="@+id/algorithmsFourthQuestionSecondOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/algorithms_fourth_question_second_option" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/fourthHorizontalDivider"
+            style="@style/HorizontalDividerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmsFourthQuestionRadioGroup" />
+
+        <TextView
+            android:id="@+id/algorithmsFifthQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/algorithms_fifth_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fourthHorizontalDivider" />
+
+        <RadioGroup
+            android:id="@+id/algorithmsFifthQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmsFifthQuestionTextView">
+
+            <RadioButton
+                android:id="@+id/algorithmsFifthQuestionFirstOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/algorithms_fifth_question_first_option" />
+
+            <RadioButton
+                android:id="@+id/algorithmsFifthQuestionSecondOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/algorithms_fifth_question_second_option" />
+
+        </RadioGroup>
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/algorithmsSubmitButton"
+            style="@style/SubmitButtonStyle"
+            android:text="@string/algorithms_submit_button"
+            app:cornerRadius="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/algorithmsFifthQuestionRadioGroup" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

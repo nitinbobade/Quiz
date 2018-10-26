@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/bannerImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/uxd_banner_illustration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ux_design_banner" />
+
+        <TextView
+            android:id="@+id/uxdFirstQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/uxd_first_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bannerImageView" />
+
+        <RadioGroup
+            android:id="@+id/uxdFirstQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uxdFirstQuestionTextView">
+
+            <RadioButton
+                android:id="@+id/uxdFirstQuestionFirstOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/uxd_first_question_first_option" />
+
+            <RadioButton
+                android:id="@+id/uxdFirstQuestionSecondOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/uxd_first_question_second_option" />
+
+            <RadioButton
+                android:id="@+id/uxdFirstQuestionThirdOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/uxd_first_question_third_option" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/firstHorizontalDivider"
+            style="@style/HorizontalDividerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uxdFirstQuestionRadioGroup" />
+
+        <TextView
+            android:id="@+id/uxdSecondQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/uxd_second_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstHorizontalDivider" />
+
+        <CheckBox
+            android:id="@+id/uxdSecondQuestionFirstOptionCheckBox"
+            style="@style/CheckBoxStyle"
+            android:text="@string/uxd_second_question_first_option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uxdSecondQuestionTextView" />
+
+        <CheckBox
+            android:id="@+id/uxdSecondQuestionSecondOptionCheckBox"
+            style="@style/CheckBoxStyle"
+            android:text="@string/uxd_second_question_second_option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uxdSecondQuestionFirstOptionCheckBox" />
+
+        <CheckBox
+            android:id="@+id/uxdSecondQuestionThirdOptionCheckBox"
+            style="@style/CheckBoxStyle"
+            android:text="@string/uxd_second_question_third_option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uxdSecondQuestionSecondOptionCheckBox" />
+
+        <View
+            android:id="@+id/secondHorizontalDivider"
+            style="@style/HorizontalDividerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uxdSecondQuestionThirdOptionCheckBox" />
+
+        <TextView
+            android:id="@+id/uxdThirdQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:focusableInTouchMode="true"
+            android:text="@string/uxd_third_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondHorizontalDivider" />
+
+        <EditText
+            android:id="@+id/uxdThirdQuestionEditText"
+            style="@style/EditTextStyle"
+            android:hint="@string/third_question_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uxdThirdQuestionTextView" />
+
+        <View
+            android:id="@+id/thirdHorizontalDivider"
+            style="@style/HorizontalDividerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uxdThirdQuestionEditText" />
+
+        <TextView
+            android:id="@+id/uxdFourthQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/uxd_fourth_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thirdHorizontalDivider" />
+
+        <RadioGroup
+            android:id="@+id/uxdFourthQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uxdFourthQuestionTextView">
+
+            <RadioButton
+                android:id="@+id/uxdFourthQuestionFirstOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/uxd_fourth_question_first_option" />
+
+            <RadioButton
+                android:id="@+id/uxdFourthQuestionSecondOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/uxd_fourth_question_second_option" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/fourthHorizontalDivider"
+            style="@style/HorizontalDividerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uxdFourthQuestionRadioGroup" />
+
+        <TextView
+            android:id="@+id/uxdFifthQuestionTextView"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/uxd_fifth_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fourthHorizontalDivider" />
+
+        <RadioGroup
+            android:id="@+id/uxdFifthQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uxdFifthQuestionTextView">
+
+            <RadioButton
+                android:id="@+id/uxdFifthQuestionFirstOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/uxd_fifth_question_first_option" />
+
+            <RadioButton
+                android:id="@+id/uxdFifthQuestionSecondOption"
+                style="@style/RadioButtonStyle"
+                android:text="@string/uxd_fifth_question_second_option" />
+
+        </RadioGroup>
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/uxdSubmitButton"
+            style="@style/SubmitButtonStyle"
+            android:text="@string/uxd_submit_button"
+            app:cornerRadius="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uxdFifthQuestionRadioGroup" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
